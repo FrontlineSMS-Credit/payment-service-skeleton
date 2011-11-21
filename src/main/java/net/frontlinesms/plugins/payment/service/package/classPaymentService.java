@@ -1,21 +1,12 @@
 package net.frontlinesms.plugins.payment.service.${sub:package};
 
-import org.creditsms.plugins.paymentview.data.domain.IncomingPayment;
-import org.creditsms.plugins.paymentview.data.domain.OutgoingPayment;
+import org.creditsms.plugins.paymentview.data.domain.*;
 import org.creditsms.plugins.paymentview.data.domain.OutgoingPayment.Status;
-import org.creditsms.plugins.paymentview.data.repository.IncomingPaymentDao;
+import org.creditsms.plugins.paymentview.data.repository.*;
 
 import net.frontlinesms.data.domain.PersistableSettings;
-import net.frontlinesms.plugins.payment.service.PaymentJob;
-import net.frontlinesms.plugins.payment.service.PaymentJobProcessor;
-import net.frontlinesms.plugins.payment.service.PaymentService;
-import net.frontlinesms.plugins.payment.service.PaymentServiceException;
-import net.frontlinesms.serviceconfig.ConfigurableService;
-import net.frontlinesms.serviceconfig.ConfigurableServiceProperties;
-import net.frontlinesms.serviceconfig.PasswordString;
-import net.frontlinesms.serviceconfig.StructuredProperties;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
+import net.frontlinesms.plugins.payment.service.*;
+import net.frontlinesms.serviceconfig.*;
 
 @ConfigurableServiceProperties(name="${sub:service}", icon="/icons/example_icon.png")
 public class ${sub:class}PaymentService implements PaymentService {
